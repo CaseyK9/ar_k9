@@ -173,7 +173,7 @@
 
             Main.ShowNotification($"~y~[ETF]*{Main.settings.dict["enterVehicle"]}*");
 
-            veh.Doors[VehicleDoorIndex.Trunk].Open();
+            veh.Doors[VehicleDoorIndex.BackLeftDoor].Open();
             this.dog.Task.RunTo(new Vector3(vehCoords.X - forwardX, vehCoords.Y - forwardY, vehCoords.Z), true);
 
             await Delay(3000);
@@ -197,7 +197,7 @@
 
             await Delay(500);
 
-            veh.Doors[VehicleDoorIndex.Trunk].Close();
+            veh.Doors[VehicleDoorIndex.BackLeftDoor].Close();
 
             this.action = ACTION.inVehicle;
         }
@@ -215,7 +215,7 @@
             
             float forwardY = veh.ForwardVector.Y * 3.7f;
 
-            Main.ShowNotification($"~y~*{Main.settings.dict["exitVehicle"]}*");
+            Main.ShowNotification($"~y~[ETF]*{Main.settings.dict["exitVehicle"]}*");
             this.dog.Task.ClearAll();
 
             veh.Doors[VehicleDoorIndex.Trunk].Open();
@@ -467,7 +467,7 @@
             {
                 if (!ped.IsAlive)
                 {
-                    await this.Stay();
+                    await this.Follow();
                     break;
                 }
 
