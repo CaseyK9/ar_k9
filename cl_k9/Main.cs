@@ -56,6 +56,8 @@
             if (settings.standalone == false)
                 TriggerEvent("esx:getSharedObject", new Action<dynamic>((dynamic obj) => { ESX = obj; }));
 
+            ShowNotification($"~y~*K9 Script Created By Essex The Fox*");
+
             RegisterCommand(
                 "k9",
                 new Action<int, List<object>, string>(
@@ -91,6 +93,7 @@
                                 else if (args[0].ToString().ToLower().Contains(settings.dict["commands"]["follow"].ToString()))
                                 {
                                     TriggerServerEvent("K9:Follow");
+
                                 }
                                 else if (args[0].ToString().ToLower().Contains(settings.dict["commands"]["stay"].ToString()))
                                 {
