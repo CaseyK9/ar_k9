@@ -1,0 +1,6 @@
+D:\ar_k9 Source Code v2\src\sh_k9\obj\Debug\sh_k9.csproj.CoreCompileInputs.cache
+D:\ar_k9 Source Code v2\src\sh_k9\obj\Debug\sh_k9.net.dll
+D:\ar_k9 Source Code v2\src\sh_k9\obj\Debug\sh_k9.net.pdb
+D:\ar_k9 Source Code v2\sh_k9.net.dll
+D:\ar_k9 Source Code v2\sh_k9.net.pdb
+D:\ar_k9 Source Code v2\src\sh_k9\obj\Debug\sh_k9.csprojAssemblyReference.cache
